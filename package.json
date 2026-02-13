@@ -1,0 +1,17 @@
+{
+  "name": "ponto-relogio",
+  "version": "1.0.0",
+  "description": "Script com Puppeteer e Mocha para bater ponto no registro de horas (Conecta)",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 60000",
+    "test:login": "mocha test/login.spec.js --timeout 60000"
+  },
+  "keywords": ["puppeteer", "mocha", "ponto", "conecta"],
+  "license": "MIT",
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "mocha": "^10.2.0",
+    "puppeteer": "^21.6.0"
+  }
+}
