@@ -1,7 +1,11 @@
 @echo off
 chcp 65001 >nul
 cd /d "%~dp0"
-title Ponto - Relógio (Conecta)
+title Ponto - Relogio (Conecta)
+
+echo.
+echo Horario de execucao do script: %date% %time%
+echo.
 
 where node >nul 2>nul
 if errorlevel 1 (
@@ -34,6 +38,8 @@ if %EXITCODE% neq 0 (
 ) else (
   echo Processo concluido.
 )
+echo.
+echo Horario de encerramento: %date% %time%
 echo.
 pause
 exit /b %EXITCODE%
